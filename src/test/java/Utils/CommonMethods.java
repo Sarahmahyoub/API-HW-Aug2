@@ -1,5 +1,4 @@
 package Utils;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,6 +13,7 @@ import steps.PageInitializer;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.ObjectInputFilter;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -32,7 +32,7 @@ public class CommonMethods extends PageInitializer {
                 break;
         }
         driver.manage().window().maximize();
-        driver.get(ConfigReader.getPropertyValue("url"));
+        driver.get(ConfigReader.prop.getProperty("url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         //this method is going to initialize all the objects available inside this method
         initializePageObjects();

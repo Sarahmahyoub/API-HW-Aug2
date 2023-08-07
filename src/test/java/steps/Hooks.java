@@ -5,14 +5,19 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class Hooks extends CommonMethods {
+// removing the CommonMethodss temporarily
 
-    @Before
+//extends CommonMethods
+
+public class Hooks  {
+
+   /* @Before
     public void start(){
-        openBrowserAndNavigateToURL();
-    }
 
-    @After
+        //openBrowserAndNavigateToURL();
+    }*/
+
+   /* @After
     public void end(Scenario scenario){
 
         byte [] pic;
@@ -28,6 +33,6 @@ public class Hooks extends CommonMethods {
 
         scenario.attach(pic, "image/png", scenario.getName());
 
-        closeBrowser();
-    }
+        //closeBrowser();
+    }*/
 }
