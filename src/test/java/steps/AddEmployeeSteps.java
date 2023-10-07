@@ -34,6 +34,7 @@ public class AddEmployeeSteps extends CommonMethods {
         //   WebElement addEmployeeBUtton = driver.findElement(By.id("menu_pim_addEmployee"));
         // addEmployeeBUtton.click();
         click(dashboardPage.addEmployeeButton);
+        System.out.println("Sarah");
     }
 
     @When("user enters firstname and lastname")

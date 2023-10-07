@@ -41,7 +41,7 @@ public class LoginSteps extends CommonMethods {
         //   passwordField.sendKeys(ConfigReader.getPropertyValue("password"));
         DOMConfigurator.configure("log4j.xml");
         Log.startTestCase("My batch 16 test case starts here");
-        sendText(ConfigReader.getPropertyValue("username"), loginPage.usernameField);
+        sendText(ConfigReader.getPropertyValue("username"), loginPage.getUsernameField());
         Log.info("my username has been entered");
         sendText(ConfigReader.getPropertyValue("password"), loginPage.passwordField);
         Log.info("My password has been entered");
@@ -68,7 +68,7 @@ public class LoginSteps extends CommonMethods {
         //logged in via normal employee
         //usernameField.sendKeys("dalima123");
         //  passwordField.sendKeys("Hum@nhrm123");
-        sendText("dalima123", loginPage.usernameField);
+        sendText("dalima123", loginPage.getUsernameField());
         sendText("Hum@nhrm123", loginPage.passwordField);
 
         System.out.println(10/0);
@@ -81,7 +81,7 @@ public class LoginSteps extends CommonMethods {
         // usernameField.sendKeys("admin123");
         //  passwordField.sendKeys("Hum@nhrm123");
         //  LoginPage loginPage = new LoginPage();
-        sendText("admin123", loginPage.usernameField);
+        sendText("admin123", loginPage.getUsernameField());
         sendText("Hum#n", loginPage.passwordField);
     }
 
@@ -93,7 +93,7 @@ public class LoginSteps extends CommonMethods {
     @When("user enters {string} and {string} and verifying the {string} for the combinations")
     public void user_enters_and_and_verifying_the_for_the_combinations
             (String username, String password, String errorMessageExpected) {
-        sendText(username, loginPage.usernameField);
+        sendText(username, loginPage.getUsernameField());
         sendText(password, loginPage.passwordField);
         click(loginPage.loginButton);
         //fetching the error message from the web element

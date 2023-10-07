@@ -10,7 +10,7 @@ public class LoginPage extends CommonMethods {
     //this is object repository of POM
 
     @FindBy(xpath="//*[@id='txtUsername']")
-    public WebElement usernameField;
+    private WebElement usernameField;
 
     @FindBy(id="txtPassword")
     public WebElement passwordField;
@@ -20,6 +20,12 @@ public class LoginPage extends CommonMethods {
 
     @FindBy(id="spanMessage")
     public WebElement errorMessageField;
+
+
+    public WebElement getUsernameField(){
+        return usernameField;
+
+    }
 
     //to initialize all the elements of this page we have to call them inside constructor
     public LoginPage(){

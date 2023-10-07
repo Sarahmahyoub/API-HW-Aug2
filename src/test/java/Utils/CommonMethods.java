@@ -63,7 +63,7 @@ public class CommonMethods extends PageInitializer {
         element.click();
     }
 
-
+// polymorphism
     public static void selectFromDropdown(WebElement dropDown, String visibleText) {
         Select sel = new Select(dropDown);
         sel.selectByVisibleText(visibleText);

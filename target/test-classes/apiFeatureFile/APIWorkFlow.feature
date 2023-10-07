@@ -12,7 +12,7 @@ Feature: Syntax API HRMS Flow
     And the employee created contains key "Message" and value "Employee Created"
     And the employee id "Employee.employee_id" is stored as a global variable
 
-  @api
+  @api2
   Scenario: Get the created employee
     Given a request is prepared for retrieving an employee
     When a GET call is made to retrieve the employee
