@@ -22,13 +22,14 @@ public class AddEmployeeSteps extends CommonMethods {
 
     String empId;
 
+    String  s= "Hello World";
     @When("user clicks on PIM option")
     public void user_clicks_on_pim_option() {
         //  WebElement pimOption = driver.findElement(By.id("menu_pim_viewPimModule"));
         //   pimOption.click();
         click(dashboardPage.pimOption);
     }
-/// HRMS3
+
     @When("user clicks on add employee button")
     public void user_clicks_on_add_employee_button() {
         //   WebElement addEmployeeBUtton = driver.findElement(By.id("menu_pim_addEmployee"));
