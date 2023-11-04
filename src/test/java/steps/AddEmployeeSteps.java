@@ -21,7 +21,7 @@ public class AddEmployeeSteps extends CommonMethods {
     String lastName;
 
     String empId;
-
+//// new branch
     @When("user clicks on PIM option")
     public void user_clicks_on_pim_option() {
         //  WebElement pimOption = driver.findElement(By.id("menu_pim_viewPimModule"));
