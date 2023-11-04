@@ -28,7 +28,7 @@ public class AddEmployeeSteps extends CommonMethods {
         //   pimOption.click();
         click(dashboardPage.pimOption);
     }
-
+/// HRMS3
     @When("user clicks on add employee button")
     public void user_clicks_on_add_employee_button() {
         //   WebElement addEmployeeBUtton = driver.findElement(By.id("menu_pim_addEmployee"));
